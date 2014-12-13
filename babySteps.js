@@ -1,6 +1,6 @@
 
 
-//}console.log(+process.argv[i]);
+// console.log(+process.argv[i]);
 
 var sum = 0;
 
