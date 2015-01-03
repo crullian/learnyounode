@@ -14,18 +14,19 @@ fs.readdir(process.argv[2], function(err, files) {
     throw err;
   }
   for (var i = 0; i < files.length; i++) {
-    if("." + process.argv[3] === path.extname(file[i]) {
-    console.log(files[i] + "\n");
+    if ("." + process.argv[3] === path.extname(files[i])) {
+      console.log(files[i]);
+    }
   };
 });
 
-/*var fs = require('fs');
-var path = require('path');
+// var fs = require('fs');
+// var path = require('path');
 
-fs.readdir(process.argv[2], function (err, list) {
-  list.forEach(function (filename) {
-    if (path.extname(filename) === '.' + process.argv[3]) {
-      console.log(filename);
-    }
-  });
-});*/
+// fs.readdir(process.argv[2], function(err, files) {
+//   files.forEach(function(filename) {
+//     if (path.extname(filename) === '.' + process.argv[3]) {
+//       console.log(filename);
+//     }
+//   });
+// });
